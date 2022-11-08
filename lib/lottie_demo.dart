@@ -100,6 +100,20 @@ class _LottieDemoState extends State<LottieDemo> with TickerProviderStateMixin {
                 }
               },
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 70),
+              child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      primary: _backgroundColor,
+                      padding: const EdgeInsets.symmetric(horizontal: 40)),
+                  onPressed: () {
+                    _bunny.setTrackingState();
+                  },
+                  child: const Text(
+                    'تسجيل',
+                    style: TextStyle(fontSize: 22),
+                  )),
+            )
           ],
         ),
       ),
